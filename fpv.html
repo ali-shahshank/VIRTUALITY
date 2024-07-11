@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Virtuality</title>
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="virtuality.css" />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--Bootstrap-5-ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!--JAVA SCRIPT-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container">
+        <a href="#landing" class="navbar-brand"><h6>VR</h6></a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-5">
+              <a href="virtuality.html#solutions" class="nav-link"
+                >Applications</a
+              >
+            </li>
+            <li class="nav-item mx-5">
+              <a href="#software" class="nav-link">Scuba</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a href="about.html" target="_blank" class="nav-link">About</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a href="#" class="nav-link"
+                ><button type="submit" class="btn btn-light btn-light-sm py-0">
+                  Log In
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--fpv-->
+    <section id="fpv">
+      <div class="container-fluid bg-black text-light">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 p-4 bg-black">
+            <h5 class="display-5 p-4">Elevated Aerial Experience</h5>
+          </div>
+          <div class="col-sm-12 col-md-12 p-0">
+            <div class="fpv-img-container"></div>
+          </div>
+          <div class="col-md-6 p-5">
+            <img
+              src="/images/drone.svg"
+              alt="svg image icon of a drone"
+              height="35px"
+              width="35px"
+            />
+            <h5 class="display-6">Commercial Use</h5>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium iste blanditiis temporibus, debitis doloremque
+              necessitatibus molestias quisquam laudantium soluta asperiores
+              reprehenderit distinctio maiores vero obcaecati sed odit pariatur
+              eligendi voluptate.
+            </p>
+            <button
+              type="button"
+              class="btn btn-light"
+              data-bs-toggle="modal"
+              data-bs-target="#commercial-modal"
+            >
+              View Models
+            </button>
+          </div>
+
+          <!--modal-for-commercial-use-->
+          <div class="modal modal-lg text-dark" id="commercial-modal">
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Commercial Use</h5>
+                  <div class="btn-close" data-bs-dismiss="modal"></div>
+                </div>
+                <div class="modal-body">
+                  <h4>Model One</h4>
+                  <p class="lead">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Deserunt voluptates enim placeat esse eum, perspiciatis id
+                    dolor voluptatem veniam magnam.
+                  </p>
+                  <img
+                    src="/images/commercial-001.png"
+                    alt=""
+                    class="img-fluid mt-3 drone-commercial"
+                  />
+
+                  <h4 class="mt-5">Model Two</h4>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium magnam accusamus quas natus nesciunt numquam
+                    nostrum ipsa vitae suscipit iste!
+                  </p>
+                  <img
+                    src="/images/quantum-systems.jpg"
+                    alt=""
+                    class="img-fluid drone-commercial-2 my-5"
+                  />
+                </div>
+
+                <div class="modal-footer">
+                  <div class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </div>
+                  <div class="btn btn-primary" data-bs-dismiss="modal">
+                    Purchase Options
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-5">
+            <img
+              src="/images/drone.svg"
+              alt="svg image icon of a drone"
+              height="35px"
+              width="35px"
+            />
+            <h5 class="display-6">Personnal Use</h5>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              ab possimus distinctio molestias commodi accusamus, provident,
+              aliquid alias similique placeat modi consequatur amet magni odio
+              nisi, in harum. Quod, tempora!
+            </p>
+            <button
+              type="button"
+              class="btn btn-light"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-one"
+            >
+              View Models
+            </button>
+
+            <!--Personal-use-modal-->
+            <div class="modal modal-lg text-dark" tabindex="-1" id="modal-one">
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Personal Use Models</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>FPV-S01</h4>
+                    <p class="lead">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Incidunt, repudiandae repellat labore fuga alias ab
+                      tempora commodi recusandae sapiente soluta.
+                    </p>
+
+                    <img src="/images/fpv.jpg" alt="" class="img-fluid" />
+                    <h4 class="mt-5">FPV-S01</h4>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem cumque ipsum consectetur, id eaque excepturi.
+                    </p>
+                    <img src="/images/fpv-2.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <a href="https://dji.com" target="_blank" class="nav-link"
+                        >Purchase Options</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--fpv-models-->
+    <section>
+      <div class="container-fluid text-light">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 p-4 bg-black">
+            <h5 class="display-6 px-4">Other Modles</h5>
+            <p class="lead px-4">
+              We have a wide selection of drones to suit your everyday needs. We
+              specilize in flight software and it's various applications. Each
+              model and software solution has a unique advantage. Furthermore,
+              we offer offshelf software for better customization. Main Use
+              Cases include construction site mapping, weather forcasts data
+              gathering and processing, Object tracking and Multi-Media
+              services.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 p-5 bg-black"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
